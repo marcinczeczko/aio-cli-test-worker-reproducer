@@ -6,7 +6,7 @@ packages:
         function: actions/worker/index.js
         web: 'yes'
         runtime: 'nodejs:12'
-        input:
+        inputs:
           myParam: 'foo-bar'
         limits:
           concurrency: 10

@@ -5,7 +5,7 @@ const fs = require('fs').promises;
 
 exports.main = worker(async (source, rendition, params) => {
 
-    console.log("All the params: ", params)
+    console.log("All the params:", params)
     // Example of how to throw a standard asset compute error
     // if e.g. the file is empty or broken.
     const stats = await fs.stat(source.path);
