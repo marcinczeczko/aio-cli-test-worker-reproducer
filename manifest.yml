@@ -1,0 +1,14 @@
+packages:
+  __APP_PACKAGE__:
+    license: Apache-2.0
+    actions:
+      worker:
+        function: actions/worker/index.js
+        web: 'yes'
+        runtime: 'nodejs:12'
+        input:
+          myParam: 'foo-bar'
+        limits:
+          concurrency: 10
+        annotations:
+          require-adobe-auth: true
